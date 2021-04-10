@@ -10,7 +10,7 @@ public class RegularExpression {
     }
 
     private static boolean checkPassword(String value) {
-        boolean check=Pattern.matches("^(?=.*[A-Z])(?=.*[0-9])[a-zA-Z\\\\d@$!%*?&]{8,}",value);
+        boolean check=Pattern.matches("^(?=.*[A-Z])(?=.*[0-9])(?=.*[@$!%*?&])[a-zA-Z\\\\d@$!%*?&]{8,}",value);
         return check;
     }
 
