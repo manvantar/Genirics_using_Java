@@ -3,7 +3,7 @@ import java.util.regex.*;
 public class RegularExpression {
     public static void main(String[] args) {
         boolean firstname=checkName("Manu");
-
+        boolean lastname=checkName("KV");
     }
 
     private static boolean checkName(String name) {
