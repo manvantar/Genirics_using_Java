@@ -9,8 +9,8 @@ public class RegularExpression {
     }
 
     private static boolean checkMobileNumber(String value) {
-
-
+        boolean checkmob=Pattern.matches("[0-9]{2,3}[ ]{1}[0-9]{10}+$",value);
+        return checkmob;
     }
 
     private static boolean checkEmail(String value) {
