@@ -6,6 +6,12 @@ public class RegularExpression {
         boolean lastname=checkName("KV");
         boolean email=checkEmail("manukvshetty@gmail.com");
         boolean number=checkMobileNumber("91 9663393660");
+        boolean password=checkPassword("223232aa");
+    }
+
+    private static boolean checkPassword(String value) {
+        boolean check=Pattern.matches("^(?=.*[A-Z])[a-zA-Z\\\\d@$!%*?&]{8,}",value);
+        return check;
     }
 
     private static boolean checkMobileNumber(String value) {
@@ -22,6 +28,7 @@ public class RegularExpression {
         boolean check=Pattern.matches("^[A-Z a-z]{3,25}$",name);
         return check;
     }
+
 
 
 
